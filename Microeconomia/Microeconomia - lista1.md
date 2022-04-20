@@ -1,4 +1,4 @@
-# 1. Considere um individuo que tem suas preferências representadas pela função utilidade:
+ # 1. Considere um individuo que tem suas preferências representadas pela função utilidade:
 ## $U(x,y)=0,4x^2y^3$
 
 Onde $x$ e $y$ são as quantidades consumidas de dois bens. Se este consumidor maximiza a utilidade, sujeito a restrição orçamentária, onde $R$ é a renda do consumidor, $p_x$ e $p_y$ são os preços dos bens. Responda:
@@ -116,6 +116,8 @@ Falso, preferências côncavas é que levam à especialização no consumo. Pref
 
 (d) Uma lanchonete oferece quatro tipos de sucos: laranja, melão, manga e uva. Um consumidor considera suco de uva pelo menos tão bom quanto de melão, suco de laranja pelo menos tão bem quanto de manga, suco de melão pelo menos tão bom quanto de laranja e suco de uva pelo menos tão bem quanto de manga. Esse consumidor também considera suco de uva pelo menos tão bom quanto de laranja e suco de melão pelo menos tão bom quanto o de manga. Tal consumidor apresenta  preferências completas e transitivas.
 
+O consumidor consegue comparar todos os sabores entre si, portanto são preferências completas. Por transitividade, comparando todas as preferências do consumidor, não conseguimos encontrar nenhuma contradição. $A>B$; $B>C$ --> $A>C$
+
 (e) Pela convexidade das preferências: quanto mais dos dois bens, melhor.
 Esse conceito refere-se à monoticidade das escolhas do consumidor.
 
@@ -126,19 +128,79 @@ Esse conceito refere-se à monoticidade das escolhas do consumidor.
 
 Slutski $ET=ES+ER$
 
-Sendp $ET>0$ e $ES<0$, logo $ER>ES$ tal que $ER+ES>0$
+Sendo $ET>0$ e $ES<0$, logo $ER>ES$ tal que $ER+ES>0$
 
 (h) A condição de equilíbrio da tangência entre reta orcamentária e curva de indiferência é sempre válida.
 
 Falso, temos os exemplos que contradizem a afirmação nas soluções de canto e de quebra (bens complementares)
 
+# 4. Considere um indivíduo que tem suas preferências representadas pela função-utilidade:
+
+$U(x,y)=\sqrt x+\sqrt y$
+
+Onde $x$ e $y$ são as quantidades consumidas de dois bens. Se este consumidor maximiza a utilidade, sujeito a restrição orçamentária, onde $R$ é a renda do consumidor, $px$ e $py$ são os preços dos bens. Responda:
+
+(a) Qual é a função de demanda pelo bem $x$, no formato $x(R, p_x, p_y)$ ?
+(b) Qual é a função de demanda pelo bem $y$, no formato $y(R,p_x, p_y)$ ?
+(c) Quando $R=300$, $p_x=2$ e $p_y=1$, qual é o ponto de escolha ótima ?
+
+Considerando $R=xp_x+yp_y$
+
+$\mathcal{L}(x, y, \lambda)=\sqrt x+\sqrt y+\lambda(R - xp_x - yp_y)$
+
+$\mathcal{L}_x=\frac{1}{2\sqrt x}-\lambda p_x=0$; $\lambda=\frac{1}{2\sqrt xp_x}$ (1)
+
+$\mathcal{L}_y=\frac{1}{2\sqrt y}-\lambda p_y=0$; $\lambda=\frac{1}{2\sqrt yp_y}$ (2)
+
+igualando (1) e (2) temos $x=\frac{yp_y^2}{p_x^2}$
+
+$\mathcal{L}_\lambda=R-xp_x-yp_y=0$
+
+$\frac{yp_y^2}{p_x^2}.p_x+yp_y=R$
+
+$yp_y^2 + yp_yp_x=Rp_x$
+
+$y=\frac{p_x}{p_y}.\frac{R}{p_x+p_y}$ (b)
+
+$x=\frac{p_y}{p_x}.\frac{R}{p_x+p_y}$ (a)
+
+(c) $x=200$ e $y=50$
+
+# 5. João consome dois bens, $X$ e $Y$. Considere a sua função de utilidade do tipo: $U(X,Y)=0,6X^2Y^3$
+Se João deseja maximizar sua utilidade, mas tem como reta de restrição orçamentária a equação: $X+4Y=150$
+Calcule as quantidades ótimas que João deve adquirir dos dois bens. Teste a condição de segunda ordem.
+
+$\mathcal{L}(x, y, \lambda)=0,6x^2y^3+\lambda(150 - x - 4y)$
+
+$\mathcal{L}_x=1,2xy^3-\lambda=0$  ; $\lambda=1,2xy^3$ (1)
+
+$\mathcal{L}_y=1,8x^2y^2-4\lambda=0$ ; $\lambda=\frac{1,8}{4}x^2y^2$ (2)
+
+igualando (1) e (2) temos $x=\frac{8}{3}y$
+
+$\mathcal{L}_\lambda=x+4y=150$
+
+$\frac{8}{3}x+4y=150$ ; $20y=450$ ; $y=22,5$ --> $x=60$
+
+CSO
+
+$\mathcal{L}_{xx}=1,2y^3$
+
+$\mathcal{L}_{xy}=3,6xy^2$
+
+$\mathcal{L}_{x\lambda}=-1$
+
+$\mathcal{L}_{yy} = 3,6x^2y$
+
+$\mathcal{L}_{y\lambda}=-4$
+
+$\mathcal{L}_{\lambda \lambda}=0$
 
 
+Matrix hessiana aumentada
+$|\bar H|=\begin{bmatrix}1,2y^3&3,6xy^2&-1\\3,6xy^2&3,6x^2y&-4\\-1&-4&0\end{bmatrix}=14,4xy^2+14,4xy^2-3,6x^2y-19,2y^3=28,8xy^2-3,6x^2y-19,2y^3=364500 (>0)$
 
-
-
-
-
+Portanto $x$ e $y$ representam um máximo.
 
 
 
