@@ -1,3 +1,5 @@
+links [[Index]] [[Microeconomia]]
+ 
  # 1. Considere um individuo que tem suas preferências representadas pela função utilidade:
 ## $U(x,y)=0,4x^2y^3$
 
@@ -60,7 +62,7 @@ Variação na demanda dado o aumento do poder aquisitivo.
 
 ##### Equação de Slutsky
 
-$ET = ES - ER$
+$ET=ES+ER$
 
 $x = \frac{2R}{5p_x}$ (a) --> $x = \frac{1000}{10}=100$
 
@@ -198,7 +200,8 @@ $\mathcal{L}_{\lambda \lambda}=0$
 
 
 Matrix hessiana aumentada
-$|\bar H|=\begin{bmatrix}1,2y^3&3,6xy^2&-1\\3,6xy^2&3,6x^2y&-4\\-1&-4&0\end{bmatrix}=14,4xy^2+14,4xy^2-3,6x^2y-19,2y^3=28,8xy^2-3,6x^2y-19,2y^3=364500 (>0)$
+$|\bar H|=\begin{bmatrix}1,2y^3&3,6xy^2&-1\\3,6xy^2&3,6x^2y&-4\\-1&-4&0\end{bmatrix}=14,4xy^2+14,4xy^2-3,6x^2y-19,2y^3$
+$=28,8xy^2-3,6x^2y-19,2y^3=364500 (>0)$
 
 Portanto $x$ e $y$ representam um máximo.
 

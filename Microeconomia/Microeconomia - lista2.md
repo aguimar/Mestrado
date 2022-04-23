@@ -1,3 +1,5 @@
+links [[Microeconomia]]
+
 # 1.  Com relação à Teoria da Firma, responda se as afirmativas são verdadeiras ou falsas e justifique brevemente as falsas.
 (a) O grau de homogeneidade de uma função corresponde aos seus rendimentos de escala.
 
@@ -95,18 +97,52 @@ $\frac{x_2^\frac{1}{3}}{4x_1^\frac{3}{4}}=\frac{x_1^\frac{1}{4}}{6x_2^\frac{2}{3
 
 $x_1+2(\frac{2}{3}x_1)=20$;    $x_1=\frac{60}{7}$; $x_2=\frac{40}{7}$
 
-CPO
+CSO
 
-$\mathcal{L}_{x_1x_1}$
+$\mathcal{L}_{x_1x_1}=-\frac{3000}{16}x_1^{-\frac{7}{4}}x_2^\frac{1}{3}$
 
-$\mathcal{L}_{x_1x_2}$
+$\mathcal{L}_{x_1x_2}=\frac{1000}{12}x_1^{-\frac{3}{4}}x_2^{-\frac{2}{3}}$
 
-$\mathcal{L}_{x_1\lambda}$
+$\mathcal{L}_{x_1\lambda}=-1$
 
-\mathcal{L}_{x_2x_2}
+$\mathcal{L}_{x_2x_2}=-\frac{2000}{9}x_1^{\frac{1}{4}}x_2^{-\frac{5}{3}}$
 
-\mathcal{L}_{x_2\lambda}
+$\mathcal{L}_{x_2\lambda}=-2$
 
+$\mathcal{L}_{\lambda\lambda}=0$
+
+$|\bar H|=\begin{bmatrix}-\frac{3000}{16}x_1^{-\frac{7}{4}}x_2^\frac{1}{3}&\frac{1000}{12}x_1^{-\frac{3}{4}}x_2^{-\frac{2}{3}}&-1\\\frac{1000}{12}x_1^{-\frac{3}{4}}x_2^{-\frac{2}{3}}&-\frac{2000}{9}x_1^{\frac{1}{4}}x_2^{-\frac{5}{3}}&-2\\-1&-2&0\end{bmatrix}$
+$=2\frac{1000}{12}x_1^{-\frac{3}{4}}x_2^{-\frac{2}{3}}+2\frac{1000}{12}x_1^{-\frac{3}{4}}x_2^{-\frac{2}{3}}+\frac{2000}{9}x_1^{-\frac{1}{4}}x_2^{-\frac{5}{3}}+4.\frac{3000}{16}x_1^{-\frac{7}{4}}x_2^\frac{1}{3}>0$
 
 (c) Suponha que o empresário esteja interessado em reduzir seus custos a um mínimo mantendo a quantidade produzida em um nível de 3059 unidades. Que quantidade ótima de insumos deverá adquirir para a produção do produto final ?
 
+#TODO Resolver essa questão
+
+
+# 5. Com relação aos mercados perfeitamente competitivos, julgue os itens a seguir como verdadeiros ou falsos e justifique, caso falso.
+(a) Existe um grande número de compradores e vendedores, de modo que os agentes sejam tomadores de preço.
+(b) Os bens são homogêneos.
+(c) Existem barreiras à saída de firmas do mercado.
+Falso, não existem barreiras nem à entrada e nem à saída de firmas do mercado
+(d) No curto prazo, as firmas operam operam com lucro econômico zero.
+Falso, essa condição é válida para o longo prazo.
+(e) A condição do preço igual ao custo marginal é uma condição necessária para o ótimo da firma perfeitamente competitiva.
+(f) A firma continua operando no curto prazo se o preço for maior que o custo médio.
+Condição de inatividade: $p<CVMe$
+$CVMe < Cme$, portante se $p > CMe$ temos que $p > CVMe$
+
+# 6. Considere um mercado em concorrência perfeita. Se a função de custo total da firma for $C(q)=q^3-9q^2+42q$, obtenha a função de oferta.
+
+$CMg=3q^2-18q+42$
+
+Em equilíbrio temos que: $p=CMg$
+
+A $CMe$ se encontra com a $CMg$ em seu ponto mínimo, neste ponto a firma está maximizando o seu lucro.
+
+$CMe=\frac{C(q)}{q} =q^2-9q+42$
+
+$\frac{dCMe}{dq}=0$
+
+$2q-9=0$ --> $q=4,5$
+
+a função de oferta será $p(q)=3q^2-18q+42$ para valores maiores ou iguais a $q=4,5$

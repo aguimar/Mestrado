@@ -1,3 +1,6 @@
+links [[Matemática]]
+
+Aluno: Aguimar Mendonça Neto
 ## 1. Considere as funções receita e custo de uma empresa, $R(Q)=1200Q-2Q^2$ e $C(Q)=Q^3-61,25Q^2+1528,5Q+2000$. Determine a produção que maximiza o lucro.
 
 ### Dado que uma empresa produz o produto Q, o lucro é dado pela diferença entre a Receita e Despesa gerados por esse produto. Temos a seguinte condição algébrica:  $π=R(Q)-C(Q)$
@@ -10,7 +13,7 @@ $π=-Q^3+59,25Q^2-328,5Q-2000$
 
 $\frac{d\pi}{dQ}=-3Q^2+118,5Q-328,5$
 
-### *C.P.O* --> $\frac{d\pi}{dQ}=0$
+### C.P.O --> $\frac{d\pi}{dQ}=0$
 
  $-3Q^2+118,5Q-328,5=0$
 
@@ -19,7 +22,7 @@ $\frac{d\pi}{dQ}=-3Q^2+118,5Q-328,5$
 $Q'=219/6=36,5$
 $Q''=18/6=3$
 
-### *C.S.O* --> $[\frac{d\pi}{dQ}]''<0$
+### C.S.O --> $[\frac{d\pi}{dQ}]''<0$
 
 $[\frac{d\pi}{dQ}]''=-6Q+118,5$
 
@@ -237,15 +240,26 @@ $\mathcal{L}_\lambda=2x+2y-36=0$
 
 $2x+2x=36$ ; $x = 9$ e $y = 9$
 
-#TODO teste da Hessiana
+CSO
 
+$\mathcal{L}_{xx}=-\frac{1}{4}x^{-\frac{3}{2}}y^\frac{1}{2}$
 
+$\mathcal{L}_{xy}=\frac{1}{4}x^{-\frac{1}{2}}y^{-\frac{1}{2}}$
 
+$\mathcal{L}_{x\lambda}=-2$
 
+$\mathcal{L}_{yy}=-\frac{1}{4}x^\frac{1}{2}y^{-\frac{3}{2}}$
 
+$\mathcal{L}_{y\lambda}=-2$
 
+$\mathcal{L}_{\lambda\lambda}=0$
+
+$|\bar H|=\begin{bmatrix}-\frac{1}{4}x^{-\frac{3}{2}}y^\frac{1}{2}&\frac{1}{4}x^{-\frac{1}{2}}y^{-\frac{1}{2}}&-2\\\frac{1}{4}x^{-\frac{1}{2}}y^{-\frac{1}{2}}&-\frac{1}{4}x^\frac{1}{2}y^{-\frac{3}{2}}&-2\\-2&-2&0 \end{bmatrix}=\frac{16}{36}>0$
+
+Obs.: substituindo os valores de x e y e calculando o determinante, verificamos que o ponto encontrado trata-se do máximo.
 
  
+
 
 
 
