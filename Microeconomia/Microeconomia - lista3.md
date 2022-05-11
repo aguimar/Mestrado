@@ -1,6 +1,6 @@
 Links [[Microeconomia]]
 
-# 1. 
+# 1. Com relação aos monopólios, julgue os itens a seguir como verdadeiros ou falsos e justifique, caso falso.
 (a) Existe apenas um vendedor, há substitutos perfeitos e existem fortes barreiras à entrada
 Falso, não há substitutos perfeitos
 (b) O monopolista escolhe produzir um nível de produto que iguala receita marginal, custo marginal e preço.
@@ -31,7 +31,7 @@ $q = \frac{93}{2}$
 
 $p=186-2(\frac{93}{2})=93$ 
 
-# 3. Um monopolista produz um certo bem de acordo com uma tecnologia para a qual o custo marginal de produção é constante
+# 3. Um monopolista produz um certo bem de acordo com uma tecnologia para a qual o custo marginal de produção é constante e igual a 4. Existem N consumidores idênticos e de tal sorte que a demanda inversa agregada por esse bem é dada por $P=10-Q$, em que $P$ é o preço e Q a quantidade total demandada.
 (a)
 $CMg=4$
 $p=10-q$
@@ -48,5 +48,25 @@ $10-2q=4$; $q=3$
 
 $p=10-3=7$
 
-# 4.
+# 4. Considere que a curva de custo é dada por: $c(q_i)=5q_i$ , onde o subscrito representa o número da firma. Calcule a quantidade, o preço e o lucro de equilíbrio para o mercado em:
+(a) Monopólio. Considere que a curva de demanda do mercado é dada por: $p=30-2q$
+
+No equilíbrio Rmg=Cmg
+$30-4q=5$ ; $q=6,25$
+$p=30-2*6,25=17,5$
+
+$\pi=RT-CT$
+
+$\pi=17,5*6,25-5*6,25; \pi=78,13$
+
+
+(b) Duopólio de Cournot. Considere que a curva de demanda do mercado é dada por: $p=30-2(q_1+q_2)$
+
+Equilíbrio $P=Cmg=5$
+
+$30-2q=5$
+$q=12,5$
+
+$\pi=RT-CT$
+$\pi=5*12,5-5*12,5=0$
 
