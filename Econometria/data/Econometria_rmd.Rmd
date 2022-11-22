@@ -1,0 +1,61 @@
+---
+title: "Econometria"
+author: "Aguimar Neto"
+date: '2022-06-17'
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 9.6
+
+O arquivo *tuna.dat* apresenta dados recentes das vendas semnanais, durante um ano, de uma marca de atum enlatado, em uma cadeia de supermercados. Há 52 observações sobre as variáveis
+
+SAL1 = vendas unitárias da marca no 1 de atum enlatado
+
+APR1 = preço unitário da marca no 1 de atum enlatado
+
+APR2,3 = preço por lata das marcas no 2 e 3 e atum enlatado
+
+Disp = uma variável binária que toma o valor 1 se há uma propaganda da marca no 1 no estabelecimento durante a semana, mas não propaganda em jornais; 0 caso contrário
+
+DispAd = uma variável binária que toma o valor 1 se há propaganda no estabelecimento e anúncio na imprensa durante aquela semana; 0 em caso contrário
+
+```{r tuna}
+load('tuna.Rdata')
+summary(tuna)
+```
+
+1.  Estime, por mínimos, o modelo log-linear
+
+```{r model}
+Model9.6 <- lm(log(sal1) ~ apr1+apr2+apr3+disp+dispad, data = tuna)
+summary(Model9.6)
+
+```
+
+2.  Discuta e interprete as estimativas de $\beta_2$ , $\beta_3$ e $\beta_4$
+
+3.  Os sinais e as grandezas *relativas* das estimativas de $\beta_5$ e $\beta_6$ são coerentes com a lógica econônomica ? Interprete essas estimatiavas usando o artifício do exercício 9.4(c)
+
+4.  No nível $\alpha =0,05$ de significância, teste cada uma das seguintes hipóteses.
+
+```{r cars}
+summary(cars)
+```
+
+## Exemplos de leitura de paramêtros
+
+> > The estimated return for another year of experience, holding tenure and education fixed, is not especially large. For example, adding three more years increases log(wage) by 3(.0041) = .0123, so wage is only about 1.2% higher.
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

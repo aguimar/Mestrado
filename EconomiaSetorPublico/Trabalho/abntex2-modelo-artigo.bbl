@@ -1,0 +1,53 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Cardoso 2020]{debora}
+\abntrefinfo{Cardoso}{CARDOSO}{2020}
+{CARDOSO, D.~F.
+\emph{Capital e trabalho no Brasil no século XXI: o impacto de políticas de
+  transferência e de tributação sobre desigualdade, consumo e estrutura
+  produtiva}.
+Tese (Doutorado) --- Univerdade Federal de Minas Gerais, 2020.}
+
+\bibitem[Cardoso et al. 2020]{ipea}
+\abntrefinfo{Cardoso et al.}{CARDOSO et al.}{2020}
+{CARDOSO, D.~F. et al. Pandemia de covid-19 e famílias : impactos da crise e
+  da renda básica emergencial. In:  \emph{Nota de Política Social}. Instituto
+  de Pesquisa Econômica Aplicada (Ipea), 2020.
+Dispon{\'\i}vel em: \url{http://repositorio.ipea.gov.br/handle/11058/10820}.}
+
+\bibitem[Cidadania]{auxilio}
+\abntrefinfo{Cidadania}{CIDADANIA}{}
+{CIDADANIA, M. da. \emph{Auxílio Emergencial}.
+Dispon{\'\i}vel em:
+  \url{https://www.gov.br/cidadania/pt-br/servicos/auxilio-emergencial}. Acesso
+  em: julho de 2022.}
+
+\bibitem[Gruber 2015]{pfpp}
+\abntrefinfo{Gruber}{GRUBER}{2015}
+{GRUBER, J. \emph{Public Finance and Public Policy}. [S.l.]: Worth Publishers,
+  2015.}
+
+\bibitem[Komatsu e Filho 2020]{kawaoka}
+\abntrefinfo{Komatsu e Filho}{KOMATSU; FILHO}{2020}
+{KOMATSU, B.~K.; FILHO, N.~M. Simulações de impactos da covid-19 e da renda
+  básica emergencial sobre o desemprego, renda, pobreza e desigualdade.
+\emph{Policy Paper}, Insper, n.~43, 2020.}
+
+\bibitem[Riani 2013]{riani}
+\abntrefinfo{Riani}{RIANI}{2013}
+{RIANI, F. \emph{Economia do Setor Público: uma abordagem introdutória}.
+  [S.l.]: LTC, 2013.}
+
+\bibitem[Saúde]{paho}
+\abntrefinfo{Saúde}{SAúDE}{}
+{SAúDE, O.~P. da. \emph{Histórico da pandemia de COVID-19}.
+Dispon{\'\i}vel em:
+  \url{https://www.paho.org/pt/covid19/historico-da-pandemia-covid-19}. Acesso
+  em: julho de 2022.}
+
+\end{thebibliography}

@@ -1,0 +1,107 @@
+---
+title: "Prova Econometria A - Salarios 1"
+author: "Aguimar Neto"
+date: '2022-06-20'
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+1.1. Estime o modelo abaixo e analise os resultados estimados.
+
+$log(sal_h)=\beta_0 + \beta_1 educ + \beta_2 idade + \beta_3 branco + \beta_4 mulher + \beta_5 urbano + \mu$
+
+```{r salarios}
+getwd()
+setwd("C:\\Users\\aguim\\Documents\\Mestrado - CAEN\\Econometria\\data")
+options(scipen = 999)
+
+load("salario1.Rdata")
+
+msalarios <- lm(lsal_h ~ educ+idade+branco+mulher+urbano, data = salarios)
+summary(msalarios)
+
+```
+
+### a)	(2 pontos) Teste a significância individual dos coeficientes estimados (estabeleça as hipóteses nula e alternativa para cada coeficiente, reporte as estatísticas do teste e seus valores-p correspondentes, a regra de decisão empregada e suas conclusões).
+
+| Coeficiente | Hipótese Nula | Hipótese Alternativa | t-value | p-value            | Teste Utilizado ( t de ho) |
+|-------------|---------------|----------------------|---------|--------------------|----------------------------|
+| B1          | Igual a 0     | Diferente de 0       | 19.778  | 0.0000000000000002 |              P(\|t\|) < 5% |
+| B2          | Igual a 0     | Diferente de 0       | 10.206  | 0.0000000000000002 |              P(\|t\|) < 5% |
+| B3          | Igual a 0     | Diferente de 0       | 2.824   |            0.00484 |              P(\|t\|) < 5% |
+| B4          | Igual a 0     | Diferente de 0       | -4.329  |          0.0000165 |              P(\|t\|) < 5% | 
+| B5          | Igual a 0     | Diferente de 0       | 2.827   |            0.00479 |              P(\|t\|) < 5% |
+
+Portanto, podemos dizer que todos os coeficientes estimados são individualmente estatísticamente significantes. Ho foi rejeitado em todos ao nível de 5% no p-value.
+
+
+### b)	(2 pontos) Teste a significância global do modelo de regressão (estabeleça as hipóteses nula e alternativa, reporte a estatística do teste e seu valor-p correspondente, a regra de decisão empregada e sua conclusão).
+
+$Ho = \beta_1=0, \beta_2=0, \beta_3=0, \beta_4=0, \beta_5=0$
+
+$H1 = Existe\ pelo\ menos\ um\ \beta <> 0$
+
+Observando o p_value da estatística F podemos dizer que a probabilidade de todos os coeficientes serem iguais a 0 e portanto nenhum explicar o modelo gerado a partir das observações de salários é bem menor que o nível de significância de 5%, então podemos afirmar que rejeitamos a hipótese nula ao nível de 5% com bastente folga.
+
+### c)	(2 pontos) Analise o ajustamento do modelo (R2)
+
+Observando o coeficiente de determinação $R^2$, vemos que as variáveis independentes educ,idade,branco,mulher,urbano explicam em média 38% (0.3794) da variação da variável dependente _lsal_h_
+
+### d)	(2 pontos) Analise os efeitos marginais estimados da(s) variável(is) explicativa (s) do modelo.
+
+De acordo com o modelo:
+
+Cada ano de educ a mais representa 9,55% de acréscimo no valor de lsal_h
+
+Cada ano de idade a mais representa 2,12% de acréscimo no valor de lsal_h
+
+Se o indivíduo tiver a cor branca representa 11,80% de acréscimo no valor de lsal_h em comparação com indivíduos de cor diferente de branco
+
+Se o indivíduo for do sexo masculino isso representa 17,91% de acréscimo no valor de lsal_h em comparação com indivíduos do sexo feminino
+
+Se o indivíduo habitar a zona urbana, isso representa 13,86% de acrescimo no valor de lsal_h em comparação com indíviduos da zona não urbana
+
+
+
+
+## 1.2.	(1 ponto) Estenda o modelo original para permitir que o retorno da educação dependa da raça e teste se o retorno da educação depende realmente da raça (estabeleça as hipóteses nula e alternativa, reporte a estatística do teste e seu valor-p correspondente, a regra de decisão empregada e sua conclusão).
+
+```{r}
+
+msalarios <- lm(lsal_h ~ educ+idade+branco+mulher+urbano+educ:branco, data = salarios)
+
+summary(msalarios)
+
+```
+```{r linearHypothesis}
+library(car)
+linearHypothesis(msalarios, c("branco=0", "educ:branco=0"))
+```
+
+H0 -> branco=0 e educ:branco=0
+H1 -> pelo menos um dos coeficientes é diferente 0
+
+Mesmo que individualmente o coeficiente da variável educ:branco seja estatísticamente insignificante, observamos pelo teste F que rejeitamos a hipótese nula (Pr(>F) < 5%). Desta forma, podemos dizer que com certo grau de confiança que a _educ_ sofre efeitos da _branco_
+
+## 1.3.	(1 ponto) Novamente, comece com o modelo original, mas agora permita que (a média) dos salários difiram entre quatro grupo de pessoas: mulheres brancas, homens brancos, mulheres não brancas e homens não brancos. Qual a diferença salarial entre mulheres brancas e mulheres não brancas? 
+
+
+```{r mulher:branco}
+
+msalarios <- lm(lsal_h ~ educ+idade+branco+mulher+urbano+mulher:branco, data = salarios)
+
+summary(msalarios)
+
+```
+
+mulheres(1) brancas(1) -> -0.203215 + 0.086176 + 0.078813 = -0,038226
+
+mulheres(1) não brancas(0) -> -0.203215
+
+A diferença dos dois grupos, em média, seria -0,038226-(-0.203215)=0.164989 (16%)
+

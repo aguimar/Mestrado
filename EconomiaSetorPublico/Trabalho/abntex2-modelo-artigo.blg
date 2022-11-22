@@ -1,0 +1,71 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: abntex2-modelo-artigo.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+The style file: abntex2-alf.bst
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Database file #1: abntex2-options.bib
+Database file #2: abntex2-modelo-references.bib
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Warning--campo year vazio ou faltando em auxilio
+Warning--campo year vazio ou faltando em paho
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+You've used 8 entries,
+            6714 wiz_defined-function locations,
+            1234 strings with 10516 characters,
+and the built_in function-call counts, 8692 in all, are:
+= -- 1036
+> -- 148
+< -- 178
++ -- 276
+- -- 47
+* -- 512
+:= -- 1176
+add.period$ -- 25
+call.type$ -- 8
+change.case$ -- 58
+chr.to.int$ -- 8
+cite$ -- 9
+duplicate$ -- 747
+empty$ -- 430
+format.name$ -- 223
+if$ -- 1801
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 127
+newline$ -- 42
+num.names$ -- 35
+pop$ -- 171
+preamble$ -- 1
+purify$ -- 27
+quote$ -- 0
+skip$ -- 860
+stack$ -- 1
+substring$ -- 323
+swap$ -- 258
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 3
+warning$ -- 2
+while$ -- 45
+width$ -- 0
+write$ -- 111
+(There were 2 warnings)

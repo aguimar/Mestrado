@@ -1,0 +1,76 @@
+\documentclass[11pt,a4paper,sans,english]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage[scale=0.75,a4paper]{geometry}
+\usepackage{babel}
+%----------------------------------------------------------------------------------
+%            personal data
+%----------------------------------------------------------------------------------
+\firstname{Aguimar}
+\familyname{Mendonça Neto}
+\title{Analista de Sistemas}                               % optional, remove/comment the line if not wanted
+\address{Rua Dona Leopoldina 480}{60110-000 Fortaleza/CE}{Brasil}         % optional, remove/comment the line if not wanted; the "country" arguments can be omitted or provided empty
+\mobile{85 988645679}                          % optional, remove/comment the line if not wanted
+%\phone{phone number}                           % optional, remove/comment the line if not wanted
+%\fax{fax number}                             % optional, remove/comment the line if not wanted
+\email{aguimar@gmail.com}                               % optional, remove/comment the line if not wanted
+\homepage{home page}                         % optional, remove/comment the line if not wanted
+\extrainfo{additional information}                 % optional, remove/comment the line if not wanted
+% \photo[64pt][0.4pt]{picture}                       % optional, uncomment the line if wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{Procurar uma frase bem bonita e motivacional}                                 % optional, remove/comment the line if not wanted
+%
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\section{Education}
+\cventry{1998--2002}{Bacharelado em Ciências da Computação}{Universidade Federal do Ceará}{Fortaleza}{Graduação}{Formação acadêmica em Computação}  % arguments 3 to 6 can be left empty
+\cventry{2008--2009}{Especialização em Gestão Tributária}{Centro de Educação Tecnológica Darcy Ribeiro}{Fortaleza}{Especialização}{Especialização em gestão tributária}
+\section{Master thesis}
+\cvitem{title}{Title}
+\cvitem{supervisors}{Supervisors}
+\cvitem{description}{Short thesis abstract}
+\section{Experience}
+\subsection{Vocational}
+\cventry{2005--2006}{Analista de Sistemas}{Serviço Federal de Processamento de Dados - Serpro}{Fortaleza}{}{General description no longer than 1--2 lines}
+\cventry{2006--2008}{Analista de Sistemas}{Banco do Nordeste do Brasil - BNB}{Fortaleza}{}{General description no longer than 1--2 lines}
+\cventry{2008--atual}{Auditor Fiscal de TI}{Secretaria da Fazenda do Estado do Ceará - Sefaz}{Fortaleza}{}{General description no longer than 1--2 lines}
+%\subsection{Miscellaneous}
+\section{Languages}
+\cvitemwithcomment{Inglês}{Avançado}{Leitura/Escrita/Fluência}
+\cvitemwithcomment{Francês}{Intermediário}{Leitura/Escrita}
+\cvitemwithcomment{Espanhol}{Intermediário}{Leitura/Escrita}
+\section{Computer skills}
+\cvdoubleitem{Python}{Conhecimentos de bibliotecas relacionadas à manipulação de dados}{Linux}{Sistema operacional livre}
+\cvdoubleitem{Sql}{Bons conhecimentos em DML}{Category 5}{Comment}
+\cvdoubleitem{Excel}{Criação de planilhas}{Category 6}{Comment}
+\section{Interests}
+\cvitem{Fotografia}{Tenho particular interesse por imagens que transmitam sentimentos.}
+\cvitem{Videogames}{Jogos de tiro e ação.}
+\cvitem{Corrida}{Pratico corrida de rua como forma de relaxamento.}
+\section{Pontos fortes}
+\cvlistitem{Análise de dados}
+\cvlistitem{Concentração}
+\cvlistitem{Matemática}
+\section{Pontos Fracos}
+\cvlistdoubleitem{Mal humor}{Item 4}
+\cvlistdoubleitem{Ansiedade}{Item 5}
+\cvlistdoubleitem{Stress}{Item 6}
+\section{References}
+\begin{cvcolumns}
+  \cvcolumn{Category 1}{Comment}
+  \cvcolumn{Category 2}{Comment}
+  \cvcolumn{Category 3}{Comment}
+\end{cvcolumns}
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Company Recruitment team}{Company's name\\Street address\\Zip Code City}
+\date{Date}
+\opening{Dear Sir or Madam,}
+\closing{Yours faithfully,}
+\enclosure{enclosures}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+\makeletterclosing
+\end{document}
